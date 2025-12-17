@@ -1,0 +1,48 @@
+{
+  "name": "messenger-wrapper",
+  "version": "1.0.0",
+  "description": "Facebook Messenger desktop wrapper",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:mac": "electron-builder --mac"
+  },
+  "keywords": [
+    "messenger",
+    "facebook",
+    "electron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.messenger.desktop",
+    "productName": "Messenger",
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "icon.icns",
+      "icon.png"
+    ],
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "icon": "icon.icns",
+      "identity": null,
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "extendInfo": {
+        "NSCameraUsageDescription": "Messenger needs access to your camera for video calls.",
+        "NSMicrophoneUsageDescription": "Messenger needs access to your microphone for voice and video calls."
+      }
+    }
+  }
+}
