@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "build:mac": "electron-builder --mac"
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win"
   },
   "keywords": [
     "messenger",
@@ -43,6 +44,15 @@
         "NSCameraUsageDescription": "Messenger needs access to your camera for video calls.",
         "NSMicrophoneUsageDescription": "Messenger needs access to your microphone for voice and video calls."
       }
+    },
+    "win": {
+      "icon": "icon.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        }
+      ]
     }
   }
 }
