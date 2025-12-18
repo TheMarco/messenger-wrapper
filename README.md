@@ -14,6 +14,8 @@ A clean, minimal desktop wrapper for Facebook Messenger built with Electron. Thi
 
 [Older Intel Macs](https://drive.google.com/file/d/1Ias4HFwPXJOpkhXpkRMC78PDcblK6wGL/view?usp=sharing)
 
+[Windows Installer 64bit and 32bit](https://drive.google.com/file/d/1hgzuZG1bPiwnyswfMdMxtiR2kcif96lv/view?usp=sharing)
+
 ## Installation from this source tree
 
 ```bash
